@@ -1,0 +1,255 @@
+/* Пример стилей для адаптивного header */
+
+@media only screen and (max-width: 600px) {
+    .novbar-line{
+    }
+    .switch img{
+      display: flex;
+      justify-content: space-between; /* Горизонтальное выравнивание по краям */
+      align-items: center;
+      margin-right: 100px;
+
+     
+    }
+    
+  }
+  @media screen and (max-width: 800px) {
+    .switch img
+    {
+     display: flex;
+     justify-content: space-between; /* Горизонтальное выравнивание по краям */
+     align-items: center;
+     margin-right: 110px;
+
+    
+   }
+   .photo{
+    position: fixed;
+    margin-top: 50px;
+    width: 500px;
+    border: 1px solid;
+    height: 600px;
+  }
+ }
+  @media screen and (min-width: 800px) {
+     .switch img
+     {
+      display: flex;
+      justify-content: space-between; /* Горизонтальное выравнивание по краям */
+      align-items: center;
+      margin-right: 110px;
+
+     
+    }
+  }
+
+
+.navbar{
+    background-color: rgb(239, 241, 241);
+}
+
+  .nav-item {
+    margin-left: 10px; /* Расстояние между элементами навигации */
+  }
+
+  @media (max-width: 768px) {
+    .navbar-nav {
+      margin-top: 10px; /* Расположение элементов навигации сверху на мобильных устройствах */
+    }
+
+    .scrollable-div {
+      display: block;
+
+      width: 500px;
+      height: 350px; /* Начальные размеры div */
+      overflow: auto; /* Добавление прокрутки при необходимости */
+      border: 1px solid #ccc; /* Добавление рамки для наглядности */
+      padding: 10px; /* Поля внутри div */
+    }
+    #img{
+      height: 400px;
+      width: 250px;
+      display: block;
+
+    }
+    
+  }
+
+  
+img{
+    width: 70px;
+    height: 70px;
+  }
+
+.novbar-line{
+    width: 3px;
+    height: 95px;
+    background-color: black;
+    color: black;
+    position: fixed;
+    left: 90px;
+    
+}
+.image-button{
+  position: flex;
+  top: 2%;
+}
+#qwewq{
+  position: fixed;
+  right: 0px;
+}
+
+.switch img{
+  display: flex;
+  justify-content: space-between; /* Горизонтальное выравнивание по краям */
+  align-items: center;
+
+  height: 50px;
+  width: 50px;
+ 
+}
+.lang{
+  display: flex;
+  justify-content: space-between; /* Горизонтальное выравнивание по краям */
+  align-items: center;
+}
+.dropdown-menu{
+  display: none;
+  position: absolute;
+}
+
+
+
+.photo{
+  margin-top: 3rem;
+  margin-right: 10rem;
+}
+#img{
+  height: 600px;
+  width: 500px;
+  display: flex;
+  left: 30%;
+}
+
+
+.wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+
+.scrollable-div {
+  margin-top: 3rem;
+  order: 2;
+  width: 700px;
+  height: 550px; 
+  overflow: auto; 
+  border: 1px solid #ccc; 
+  padding: 10px;
+}
+
+
+
+
+#log1, #log2, #log3{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 30%;
+  background-color: rgb(245, 241, 241);
+  margin: 30px 74px 30px;
+  cursor: pointer;
+
+}
+
+#log1{
+  cursor: pointer;
+  background-image: url('/png/audio.png');
+  background-position: center;
+  border: none;
+  color: white;
+  display: inline-block;
+ 
+  background-size: 80px;
+
+}
+#log2{
+  background-image: url('/png/movie.png');
+  background-position: center;
+  background-size: 80px;
+  border: none;
+  color: white;;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#log3{
+  background-image: url('/png/qr.png');
+  background-size: 80px;
+  background-position: center;
+  border: none;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+#modalBodyContent video{
+  width: 600px;
+  height: 600px;
+}
+figure{
+  margin: 0;
+  text-align: center;
+}
+figure audio{
+  display: block;
+  margin: 0 auto;
+}
+video{
+  display: block;
+  margin: 0 auto;
+}
+
+
+#pngqr{
+  display: block;
+  margin: 0 auto;
+}
+.modal-body img{
+  height: 500px;
+  width: 500px;
+}
+.modal-body a{
+  margin-left: 45%;
+}
+
+
+
+
+.dark-mode {
+  color: #ffffff;
+  background: rgb(59, 59, 59);
+}
+.dark-mode #log1{
+  background-color: rgb(126, 119, 119);
+
+}
+.dark-mode #log2{
+  background-color: rgb(126, 119, 119);
+
+}
+.dark-mode #log3{
+  background-color: rgb(126, 119, 119);
+
+}
+.dark-mode .navbar{
+  background-color: rgb(126, 119, 119);
+}
+
+.dark-mode header {
+  background-color: rgb(126, 119, 119);
+}
+
+.dark-mode .novbar-line {
+  background-color: red;
+}
