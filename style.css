@@ -163,7 +163,7 @@ img{
 
 #log1{
   cursor: pointer;
-  background-image: url('/png/audio.png');
+  background-image: url('png/audio.png');
   background-position: center;
   border: none;
   color: white;
@@ -173,7 +173,7 @@ img{
 
 }
 #log2{
-  background-image: url('/png/movie.png');
+  background-image: url('png/movie.png');
   background-position: center;
   background-size: 80px;
   border: none;
@@ -183,7 +183,7 @@ img{
 }
 
 #log3{
-  background-image: url('/png/qr.png');
+  background-image: url('png/qr.png');
   background-size: 80px;
   background-position: center;
   border: none;
