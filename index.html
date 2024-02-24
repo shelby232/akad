@@ -9,26 +9,26 @@
   
 </head>
 <body>
-
+  
+ 
   
   <nav class="navbar navbar-expand-lg">
     <a class="navbar-brand" href="#"><img id="logo" src="all/logoakad.png" alt="no"></a>
     <p id="title">KRIMINALISTIKA</p>
     <div class="switch">
-      <a id="qwewq" class="btn image-button" href="#"><img id="moons" src="png/sun.png" alt=""  onclick="changeImage()" ></a>
+      <a id="qwewq" class="btn image-button" href="#">
+        <img id="moons" src="png/sun.png" alt=""  onclick="changeImage()" >
+      </a>
     </div>
     <form action="" method="post">
-      <select id="select" name="language">
-        <option value="en">
-          <img src="png/uzb.png" alt="Uzbekistan Flag" />Uz
-        </option>
-        <option value="fr">
-          <img src="all/logo.png" alt="France Flag" />Ru
-        </option>
-        <option value="es">
-          <img src="all/logoakad.png" alt="Spain Flag" />En
-        </option>
-      </select>
+      <div class="dropdown">
+        <div class="dropbtn">UZ</div>
+        <div class="dropdown-content">
+          <a href="#">UZ</a>
+          <a href="#">RU</a>
+          <a href="#">EN</a>
+        </div>
+      </div>
     </form>
   </nav>
 
@@ -96,7 +96,8 @@
       </div>
   </div>
 </div>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script>function changeImage() {
     const image = document.getElementById('moons');
     const currentSrc = image.getAttribute('src');
@@ -106,10 +107,91 @@
     } else {
       image.src = 'png/sun.png';
     }
-  }</script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  }
+  // При закрытии модального окна с видео
+  $('#exampleModalCenter2').on('hidden.bs.modal', function (e) {
+    let video = document.getElementById('Video');
+    let videoPlayer = video.querySelector('video');
+    videoPlayer.pause(); // Пауза видео при закрытии модального окна
+  });
+
+  // При закрытии модального окна с аудио
+  $('#exampleModalCenter1').on('hidden.bs.modal', function (e) {
+    let audio = document.getElementById('Audio');
+    let audioPlayer = audio.querySelector('audio');
+    audioPlayer.pause(); // Пауза аудио при закрытии модального окна
+  });
+  </script>
+    
+    <style>.dropbtn {
+      padding: 11px;
+      cursor: pointer;
+    }
+    
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      width: 140px;
+    }
+    .dropbtn
+    {
+    background: url('https://icons.iconarchive.com/icons/custom-icon-design/round-world-flags/16/Uzbekistan-icon.png') no-repeat left center;
+    padding-left: 25px;
+    width: 40px;
+    }
+    
+    .dropbtn::after {
+      background: rgba(0, 0, 0, 0) url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-16.png") no-repeat scroll center center;
+      content: "";
+      height: 16px;
+      position: absolute;
+      right: 0;
+      top: 7px;
+      width: 16px;
+    }
+    
+    .dropdown-content a:first-child
+    {
+    background: url('https://icons.iconarchive.com/icons/custom-icon-design/round-world-flags/16/Uzbekistan-icon.png') no-repeat left center;
+    }
+    .dropdown-content a:nth-child(2) 
+    {
+    background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center;
+    }
+    
+    .dropdown-content a:last-child
+    {
+    background: url('https://icons.iconarchive.com/icons/fatcow/farm-fresh/16/flag-usa-icon.png') no-repeat left center;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 2px 0 2px 25px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }</style>
+
+  
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

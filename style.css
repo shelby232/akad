@@ -1,83 +1,6 @@
-/* Пример стилей для адаптивного header */
-
-@media only screen and (max-width: 600px) {
-    
-  }
-  @media screen and (max-width: 800px) {
-    .switch img
-    {
-     display: flex;
-     justify-content: space-between; /* Горизонтальное выравнивание по краям */
-     align-items: center;
-     margin-right: 110px;
-
-    
-   }
-   .photo{
-    position: fixed;
-    margin-top: 50px;
-    width: 500px;
-    border: 1px solid;
-    height: 600px;
-  }
- }
-
 .navbar{
-    background-color: rgb(231, 229, 229);
+  background-color: #e2e1e1;
 }
-
-  .nav-item {
-    margin-left: 10px; /* Расстояние между элементами навигации */
-  }
-
-  @media (max-width: 768px) {
-    .navbar-nav {
-      margin-top: 10px; /* Расположение элементов навигации сверху на мобильных устройствах */
-    }
-
-    .scrollable-div {
-      display: block;
-
-      width: 500px;
-      height: 350px; /* Начальные размеры div */
-      overflow: auto; /* Добавление прокрутки при необходимости */
-      border: 1px solid #ccc; /* Добавление рамки для наглядности */
-      padding: 10px; /* Поля внутри div */
-    }
-    #img{
-      height: 400px;
-      width: 250px;
-      display: block;
-
-    }
-    
-  }
-
-  
-  #select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    padding: 5px;
-    background: url('arrow_down.png') no-repeat right;
-    background-size: 20px;
-  }
-  
-  option {
-    padding: 5px;
-    background-repeat: no-repeat;
-    background-position: 5px center;
-  }
-  
-  /* Для опций с флагами */
-  option img {
-    vertical-align: middle;
-    margin-right: 10px;
-    width: 230px; /* Измените размер по необходимости */
-    height: 220px; /* Измените размер по необходимости */
-  }
-  
-  
 #logo{
   width: 150px;
   height: 80px;
@@ -126,9 +49,11 @@
   margin-right: 10rem;
   border: 1px solid black;
   box-shadow: 10px 5px 5px rgb(82, 81, 81);
+  width: 600px;
+  height: 740px;
 }
 #img{
-  height: 600px;
+  height: 650px;
   width: 500px;
   display: flex;
   left: 30%;
@@ -144,8 +69,8 @@
 .scrollable-div {
   margin-top: 3rem;
   order: 2;
-  width: 700px;
-  height: 550px; 
+  width: 1000px;
+  height: 650px; 
   overflow: auto; 
   border: 1px solid #ccc; 
   padding: 10px;
@@ -155,12 +80,12 @@
 
 
 #log1, #log2, #log3{
-  display: inline-block;
+  display: inline;
   width: 80px;
   height: 80px;
   border-radius: 30%;
   background-color: rgb(245, 241, 241);
-  margin: 10px 80px 10px 70px;
+  margin: 20px 150px 20px 100px;
   cursor: pointer;
 
 }
