@@ -10,14 +10,16 @@
 </head>
 <body>
   
- 
-  
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#"><img id="logo" src="all/logoakad.png" alt="no"></a>
+  <nav class="navbar navbar-expand-md" style="height: 110px;">
+    <div class="navbar-brand">
+      <img id="logo" src="all/logoakad.png" alt="no">
+      <p class="nov" style="font-size:18px; text-align: center;">Smart Akademiya</p>
+    </div>
+    
     <p id="title">KRIMINALISTIKA</p>
     <div class="switch">
       <a id="qwewq" class="btn image-button" href="#">
-        <img id="moons" src="png/sun.png" alt=""  onclick="changeImage()" >
+        <img id="moons" src="png/sun.png" alt=""  onclick="changeImage()">
       </a>
     </div>
     <form action="" method="post">
@@ -53,87 +55,78 @@
     
   </div>
 
-  
-
-
-
-
   <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-
-              <div class="modal-body" id="Audio">
-                <figure>
-                  <figcaption>Audio</figcaption>
-                  <audio controls src="all/q.mp3"></audio>
-                </figure>
-                
-              </div>
-          </div>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body" id="Audio">
+          <figure>
+            <figcaption>Audio</figcaption>
+            <audio controls src="all/q.mp3"></audio>
+          </figure>
+        </div>
       </div>
+    </div>
   </div>
   <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-
-            <div class="modal-body" id="Video">
-              <video width="320" height="240" controls>
-                <source src="all/rebolt.ae.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
-
-          <div class="modal-body" id="Qr">
-              <img id="pngqr" src="png/qr.png" alt="">
-              <a href="png/qr.png">Donwload</a>
-          </div>
+        <div class="modal-body" id="Video">
+          <video width="320" height="240" controls>
+            <source src="all/rebolt.ae.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
+    </div>
   </div>
-</div>
+  <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body" id="Qr">
+          <img id="pngqr" src="png/qr.png" alt="">
+          <a href="png/qr.png">Donwload</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script>function changeImage() {
-    const image = document.getElementById('moons');
-    const currentSrc = image.getAttribute('src');
+  <script>
+    function changeImage() {
+      const image = document.getElementById('moons');
+      const currentSrc = image.getAttribute('src');
   
-    if (currentSrc === 'png/sun.png') {
-      image.src = 'png/moon.png';
-    } else {
-      image.src = 'png/sun.png';
+      if (currentSrc === 'png/sun.png') {
+        image.src = 'png/moon.png';
+      } else {
+        image.src = 'png/sun.png';
+      }
     }
-  }
-  // При закрытии модального окна с видео
-  $('#exampleModalCenter2').on('hidden.bs.modal', function (e) {
-    let video = document.getElementById('Video');
-    let videoPlayer = video.querySelector('video');
-    videoPlayer.pause(); // Пауза видео при закрытии модального окна
-  });
 
-  // При закрытии модального окна с аудио
-  $('#exampleModalCenter1').on('hidden.bs.modal', function (e) {
-    let audio = document.getElementById('Audio');
-    let audioPlayer = audio.querySelector('audio');
-    audioPlayer.pause(); // Пауза аудио при закрытии модального окна
-  });
+    $('#exampleModalCenter2').on('hidden.bs.modal', function (e) {
+      let video = document.getElementById('Video');
+      let videoPlayer = video.querySelector('video');
+      videoPlayer.pause(); 
+    });
+
+    $('#exampleModalCenter1').on('hidden.bs.modal', function (e) {
+      let audio = document.getElementById('Audio');
+      let audioPlayer = audio.querySelector('audio');
+      audioPlayer.pause(); 
+    });
   </script>
     
-    <style>.dropbtn {
+  <style>
+    .dropbtn {
       padding: 11px;
       cursor: pointer;
     }
-    
     
     .dropdown {
       position: relative;
       display: inline-block;
     }
-    
     
     .dropdown-content {
       display: none;
@@ -141,11 +134,11 @@
       background-color: #f9f9f9;
       width: 140px;
     }
-    .dropbtn
-    {
-    background: url('https://icons.iconarchive.com/icons/custom-icon-design/round-world-flags/16/Uzbekistan-icon.png') no-repeat left center;
-    padding-left: 25px;
-    width: 40px;
+    
+    .dropbtn {
+      background: url('https://icons.iconarchive.com/icons/custom-icon-design/round-world-flags/16/Uzbekistan-icon.png') no-repeat left center;
+      padding-left: 25px;
+      width: 40px;
     }
     
     .dropbtn::after {
@@ -158,21 +151,18 @@
       width: 16px;
     }
     
-    .dropdown-content a:first-child
-    {
-    background: url('https://icons.iconarchive.com/icons/custom-icon-design/round-world-flags/16/Uzbekistan-icon.png') no-repeat left center;
-    }
-    .dropdown-content a:nth-child(2) 
-    {
-    background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center;
+    .dropdown-content a:first-child {
+      background: url('https://icons.iconarchive.com/icons/custom-icon-design/round-world-flags/16/Uzbekistan-icon.png') no-repeat left center;
     }
     
-    .dropdown-content a:last-child
-    {
-    background: url('https://icons.iconarchive.com/icons/fatcow/farm-fresh/16/flag-usa-icon.png') no-repeat left center;
+    .dropdown-content a:nth-child(2) {
+      background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center;
     }
     
-    /* Links inside the dropdown */
+    .dropdown-content a:last-child {
+      background: url('https://icons.iconarchive.com/icons/fatcow/farm-fresh/16/flag-usa-icon.png') no-repeat left center;
+    }
+    
     .dropdown-content a {
       color: black;
       padding: 2px 0 2px 25px;
@@ -180,14 +170,16 @@
       display: block;
     }
     
-    /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {background-color: #f1f1f1}
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
     
-    /* Show the dropdown menu on hover */
     .dropdown:hover .dropdown-content {
       display: block;
-    }</style>
+    }
+    
 
+  </style>
   
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
